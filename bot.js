@@ -14,14 +14,14 @@ client.on('guildMemberRemove', member => {
 .addField('**عدد الاعضاء**',`[ ${member.guild.memberCount} ]`,true)
 .setColor('Random')
    
-   var channel =member.guild.channels.find('name', 'hub')
+   var channel =member.guild.channels.find('name', '✵》hub')
    if (!channel) return;
          channel.send({embed : embed});
  
 });
 
 client.on('guildMemberAdd', member => {
-    let channel = member.guild.channels.find('name', 'hub');
+    let channel = member.guild.channels.find('name', '✵》hub');
     let memberavatar = member.user.avatarURL
       if (!channel) return;
     let embed = new Discord.RichEmbed()
@@ -52,7 +52,7 @@ client.on('guildMemberAdd', member => {
         .setColor('PURPLE')
         .setFooter(`====اهلا السيرفر نور بيك و الله====`, 'https://cdn.discordapp.com/attachments/397818254439219217/399292026782351381/shy.png')
    
-    var channel =member.guild.channels.find('name', 'hub')
+    var channel =member.guild.channels.find('name', '✵》hub')
     if (!channel) return;
     channel.send({embed : embed});
  
